@@ -35,6 +35,7 @@ class HomePage extends StatelessWidget {
         future: Firebase.initializeApp(
           options: DefaultFirebaseOptions.currentPlatform,
         ),
+        
         builder: (context, snapshot){
           switch (snapshot.connectionState) {
             case ConnectionState.done:
